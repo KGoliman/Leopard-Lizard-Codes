@@ -5,4 +5,5 @@ My Steps:
 1. Create pedigree figure using kinship2 based on information provided by the zoo. Inbreeding is determined from relationship and pairings.
 2. Filter SNPs using plink, make kinship matrix of founder using plink2-KING
 3. Make genomic pedigree using sequoia
-4. Check kinship matrix and inferred pedigree of founders for matches
+4. Make pedigree of founders using kinship2
+5. Check kinship matrix and inferred pedigree of founders for matches
