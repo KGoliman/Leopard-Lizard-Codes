@@ -1,0 +1,10 @@
+#Plink2
+# In some cases, copy-pasting may not work, try typing it
+
+#populations.plink uses a .bed, .bim, & a .fam file
+> plink --file populations.plink -- geno 0.05 --maf 0.3 --indep 50 5 2 --allow-extra-chr --out Geno_filtered  
+> plink --file populations.plink --extract Geno_filtered.prune.in --recodeA --out inputSequoia --allow-extra-chr
+#inputSequoia will be in a .raw file, and is the file I'm using for Sequoia
+
+#Plink2-KING, requires .bed, .bimn, & .bam file
+> ./plink2 --bfile populations.plink --make-king-table
